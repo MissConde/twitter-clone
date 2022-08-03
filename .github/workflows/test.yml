@@ -1,0 +1,10 @@
+name: Testing & Linting
+
+on: [push]
+
+jobs:
+  Cool-Test:
+    runs-on: ubuntu-latest
+
+     - name: Running tests
+       run: npm run test
