@@ -5,6 +5,6 @@ on: [push]
 jobs:
   Cool-Test:
     runs-on: ubuntu-latest
-
+    steps:
      - name: Running tests
        run: npm run test
