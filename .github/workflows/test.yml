@@ -6,6 +6,9 @@ jobs:
   Cool-Test:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout to corresponding branch
+       uses: actions/checkout@v2
+
     - name: Get Node Version 14
        uses: actions/setup-node@v2
        with:
