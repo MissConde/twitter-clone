@@ -6,5 +6,8 @@ jobs:
   Cool-Test:
     runs-on: ubuntu-latest
     steps:
+     - name: Installing dependencies
+       run: npm install
+
      - name: Running tests
        run: npm run test
