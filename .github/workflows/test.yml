@@ -15,7 +15,7 @@ jobs:
          node-version: '14'
 
     - name: Installing dependencies
-      run: yarn install
+      run: npm ci
 
     - name: Running tests
-      run: yarn test
+      run: npm test
