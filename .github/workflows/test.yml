@@ -1,0 +1,21 @@
+name: Testing & Linting
+
+on: [push]
+
+jobs:
+  Cool-Test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout to corresponding branch
+      uses: actions/checkout@v2
+
+    - name: Get Node Version 14
+      uses: actions/setup-node@v2
+      with:
+         node-version: '14'
+
+    - name: Installing dependencies
+      run: npm ci
+
+    - name: Running tests
+      run: npm test
