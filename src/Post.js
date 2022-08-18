@@ -35,7 +35,7 @@ const Post = forwardRef(({
                     <div className="post__headerDescription">
                         <p>{text}</p>
                     </div>
-                    <img src={image}/>
+                    <img src={image} alt="twitter_image"/>
                 <div className="post__footer">
                     <ChatBubbleOutlineIcon fontSize="small"/>
                     <RepeatIcon fontSize="small"/>
